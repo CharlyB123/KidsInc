@@ -8,7 +8,7 @@ public class Title extends JPanel implements ActionListener
     Info info = new Info(this);
     Instructions inst = new Instructions(this);
     Story story = new Story(this);
-    // I added this comment as a test
+    // I added this comment as a test part 2
     //MENU SETUP
     ImageIcon imageStart = new ImageIcon("images/start.jpg");
     ImageIcon imageHow = new ImageIcon("images/howtoplay.jpg");
