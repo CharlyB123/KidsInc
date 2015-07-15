@@ -3,16 +3,17 @@ import javax.swing.*;
 
 public class myJFrame extends JFrame
 {
+    myJPanel mjp = new myJPanel();
+    
     public myJFrame ()
     {
-	super ("IST 240 - Team 14: Final Project");
-
-        myJPanel mjp = new myJPanel();
-    	
-	getContentPane().add(mjp,"Center");
+	super ("Kids Inc");
+      
+    	add(mjp);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-	setSize (655, 480);
+        setResizable(false);
+	setSize (850, 600);
 	setVisible(true);
     }
 }

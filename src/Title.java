@@ -8,9 +8,9 @@ public class Title extends JPanel implements ActionListener
     Info info = new Info(this);
     Instructions inst = new Instructions(this);
     Story story = new Story(this);
-    // I added this comment as a test part 2
+
     //MENU SETUP
-    ImageIcon imageStart = new ImageIcon("images/start.jpg");
+    ImageIcon imageStart = new ImageIcon("images/start2.jpg");
     ImageIcon imageHow = new ImageIcon("images/howtoplay.jpg");
     ImageIcon imageCredits = new ImageIcon("images/credits.jpg");
     JButton jb1 = new JButton(imageHow);
@@ -23,20 +23,20 @@ public class Title extends JPanel implements ActionListener
     {
         super();
         setBackground(Color.white);
-        setBounds(0,0,640,441);
+        setBounds(0,0,850,600);
         setLayout(null);
         
         //ADD MENU BUTTONS
         add(jb1);
-        jb1.setBounds(0,370,160,71);
+        jb1.setBounds(0,500,160,70);
         jb1.addActionListener(this);
         
         add(jb2);
-        jb2.setBounds(160,370,320,71);
+        jb2.setBounds(160,470,530,100);
         jb2.addActionListener(this);
         
         add(jb3);
-        jb3.setBounds(480,370,160,71);
+        jb3.setBounds(690,500,160,70);
         jb3.addActionListener(this);
     }
     
@@ -73,7 +73,7 @@ public class Title extends JPanel implements ActionListener
     public void paintComponent(Graphics g) 
     {
     	super.paintComponent(g);
-    	Image myImage = Toolkit.getDefaultToolkit().getImage("images/title.jpg");
+    	Image myImage = Toolkit.getDefaultToolkit().getImage("images/title2.jpg");
     	g.drawImage(myImage, 0, 0, this);
         g.setColor(Color.yellow);
     }
