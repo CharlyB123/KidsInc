@@ -4,7 +4,8 @@ import java.awt.event.*;
 
 public class Title extends JPanel implements ActionListener
 {
-    //PANEL INITIALIZERS
+//comment    
+//PANEL INITIALIZERS
     Info info = new Info(this);
     Instructions inst = new Instructions(this);
     Story story = new Story(this);
